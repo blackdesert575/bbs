@@ -1,4 +1,6 @@
-# image_board
+# bbs
+
+* bbs: Bulletin Board System
 
 ## To-do-list
 
