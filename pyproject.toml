@@ -2,7 +2,7 @@
 name = "main"
 version = "0.1.0"
 description = "make a image board with Django"
-authors = [{ name = "Hong", email = "hong@ubuntu-lab-01" }]
+authors = [{ name = "Hong", email = "yunghunghuang984@gmail.com" }]
 requires-python = "~=3.10"
 readme = "README.md"
 license = "MIT"
