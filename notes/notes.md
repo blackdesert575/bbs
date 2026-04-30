@@ -59,3 +59,20 @@ $ brew install mysql-client pkg-config
 $ export PKG_CONFIG_PATH="$(brew --prefix)/opt/mysql-client/lib/pkgconfig"
 $ uv sync
 ```
+
+* Setup podman(docker) desktop on macOS
+* [podman.io](https://podman.io/)
+
+* init on macOS with podman for mysql
+
+```shell
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, polls, posts, sessions.
+Run 'python manage.py migrate' to apply them.
+April 30, 2026 - 12:20:20
+Django version 4.1, using settings 'main.settings'
+Starting development server at http://127.0.0.1:18080/
+Quit the server with CONTROL-C.
+```

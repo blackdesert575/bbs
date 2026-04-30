@@ -2,6 +2,7 @@
 
 ## To-do-list
 
+* init for 1st time bootstrap image_board
 * reference implementation
     * [github.com/blackdesert575/pttweb](https://github.com/blackdesert575/pttweb)
     * [github.com/pinry/pinry](https://github.com/pinry/pinry)
@@ -41,11 +42,15 @@
 ## Quick Start
 
 ```shell
-#How to migrate from Poetry to UV package manager?
-uvx migrate-to-uv
+# database migrate
+uv run  main/manage.py migrate
+
+# create admin
+uv run main/manage.py createsuperuser
 
 #run django with uv
 uv run  main/manage.py runserver 18080
+
 
 # open URL with browser or test with cli tools: curl/wget/k6/...etc
 # main
