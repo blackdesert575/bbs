@@ -1,18 +1,12 @@
 # bbs
 
+* make a 4chan-like or pttweb-like board with Django
 * bbs: Bulletin Board System
 
 ## To-do-list
 
-* init for 1st time bootstrap image_board
-* reference implementation
-    * [github.com/blackdesert575/pttweb](https://github.com/blackdesert575/pttweb)
-    * [github.com/pinry/pinry](https://github.com/pinry/pinry)
-    * [pypi.org/project/Boorunaut](https://pypi.org/project/Boorunaut/)
-    * [forked from gnstaxo/imageboard](https://github.com/blackdesert575/imageboard)
-    * [szurubooru](https://github.com/rr-/szurubooru)
-        * Image board engine, Danbooru-style.
-    * [A Complete Beginner's Guide to Django - Part 1](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
+* Diagrams for build this project
+* init for 1st time bootstrap bbs
 * app post:
     * How to render images/video Thumbnail?
     * edit views/PostDetail to make query for two models(Post/Comment) or even combine them into one to render template post_detail.html
@@ -26,22 +20,33 @@
 
 ## Prerequisites
 
-* Linux host such as Arch Linux, Debian, Ubuntu, RHEL ...etc
-* MySQL
-    * [docker hub/MySQL](https://hub.docker.com/_/mysql)
-    * [MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
-    * [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
-    * [教學課程：使用 MySQL 和 Docker Compose 建立多容器應用程式](https://learn.microsoft.com/zh-tw/visualstudio/docker/tutorials/tutorial-multi-container-app-mysql)
-* uv
-    * An extremely fast Python package and project manager, written in Rust.
-    * [docs.astral.sh/uv/](https://docs.astral.sh/uv/)
-* setup python django project with uv
-    * run scripts/setup_with_uv.sh
-* tree
-    * a CLI tools to list contents of directories in a tree-like format.
-* docker/podman (just pickup one to do conatiner image building and running)
+* Python3 >= 3.10
+    * tool for setup this project:
+    * uv
+        * An extremely fast Python package and project manager, written in Rust.
+        * [docs.astral.sh/uv/](https://docs.astral.sh/uv/)
+    * setup python django project with uv
+        * run scripts/setup_with_uv.sh
+* docker/podman (just pickup one to do conatiner image building and running):
+    * For quickly setup Database in a Linux container env
+* Database(Just pick one):
+    * SQLite: 
+        * For a small project or something you don’t plan to deploy in a production environment
+    * PostgreSQL:
+        * Just wanna Try it!
+        * [docker hub/postgres](https://hub.docker.com/_/postgres)  
+    * MySQL (deprecated):
+        * [docker hub/MySQL](https://hub.docker.com/_/mysql)
+        * [MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
+        * [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
+        * [教學課程：使用 MySQL 和 Docker Compose 建立多容器應用程式](https://learn.microsoft.com/zh-tw/visualstudio/docker/tutorials/tutorial-multi-container-app-mysql)
 
 ## Quick Start
+
+* setup PostgreSQL with Podman/Docker compose in postgresql/
+
+
+* Setup bbs with uv
 
 ```shell
 # database migrate
