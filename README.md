@@ -4,15 +4,8 @@
 
 ## To-do-list
 
+* Migration from MySQL to PostgreSQL
 * init for 1st time bootstrap image_board
-* reference implementation
-    * [github.com/blackdesert575/pttweb](https://github.com/blackdesert575/pttweb)
-    * [github.com/pinry/pinry](https://github.com/pinry/pinry)
-    * [pypi.org/project/Boorunaut](https://pypi.org/project/Boorunaut/)
-    * [forked from gnstaxo/imageboard](https://github.com/blackdesert575/imageboard)
-    * [szurubooru](https://github.com/rr-/szurubooru)
-        * Image board engine, Danbooru-style.
-    * [A Complete Beginner's Guide to Django - Part 1](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
 * app post:
     * How to render images/video Thumbnail?
     * edit views/PostDetail to make query for two models(Post/Comment) or even combine them into one to render template post_detail.html
@@ -27,11 +20,7 @@
 ## Prerequisites
 
 * Linux host such as Arch Linux, Debian, Ubuntu, RHEL ...etc
-* MySQL
-    * [docker hub/MySQL](https://hub.docker.com/_/mysql)
-    * [MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
-    * [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
-    * [教學課程：使用 MySQL 和 Docker Compose 建立多容器應用程式](https://learn.microsoft.com/zh-tw/visualstudio/docker/tutorials/tutorial-multi-container-app-mysql)
+* PostgreSQL
 * uv
     * An extremely fast Python package and project manager, written in Rust.
     * [docs.astral.sh/uv/](https://docs.astral.sh/uv/)
@@ -124,6 +113,24 @@ poetry export -f requirements.txt --output requirements.txt
 poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```
 
+## uv
+
+* tips
+
+```shell
+uv self update
+
+uv python list
+
+uv python install 3.13.13
+
+uv add psycopg[binary]
+```
+
+## python3
+
+* [Python 3.13.13 Release date: April 7, 2026](https://www.python.org/downloads/release/python-31313/)
+
 ## Test
 
 * [django / pass multiple models to my ListView](https://stackoverflow.com/questions/67223248/django-pass-multiple-models-to-my-listview)
@@ -146,8 +153,25 @@ $ python manage.py shell
 'testuser'
 ```
 
+## reference implementation
+* [github.com/blackdesert575/pttweb](https://github.com/blackdesert575/pttweb)
+* [github.com/pinry/pinry](https://github.com/pinry/pinry)
+* [pypi.org/project/Boorunaut](https://pypi.org/project/Boorunaut/)
+* [forked from gnstaxo/imageboard](https://github.com/blackdesert575/imageboard)
+* [szurubooru](https://github.com/rr-/szurubooru)
+    * Image board engine, Danbooru-style.
+* [A Complete Beginner's Guide to Django - Part 1](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
+* [jenkins](https://www.jenkins.io/)
+  * init 1st setup guide pages (Post-installation setup wizard)?
+    * [github.com/jenkinsci/jenkins/tree/master/core/src/main/resources/jenkins/install](https://github.com/jenkinsci/jenkins/tree/master/core/src/main/resources/jenkins/install)
+    * [github.com/jenkinsci/jenkins/tree/master/core/src/main/resources/jenkins/install/SetupWizard](https://github.com/jenkinsci/jenkins/tree/master/core/src/main/resources/jenkins/install/SetupWizard)
+
 ## Misc
 
+* Upgrade Django to a new version
+  * [docs.djangoproject.com/en/6.0/howto/upgrade-version/](https://docs.djangoproject.com/en/6.0/howto/upgrade-version/)
+* Django supported-versions
+  * [www.djangoproject.com/download/#supported-versions](https://www.djangoproject.com/download/#supported-versions)
 * [stackoverflow.com/questions/79118841/how-to-migrate-from-poetry-to-uv-package-manager](https://stackoverflow.com/questions/79118841/how-to-migrate-from-poetry-to-uv-package-manager)
 * [chatgpt-line-bot](https://github.com/Lin-jun-xiang/chatgpt-line-bot)
 * [gpt4free](https://github.com/xtekky/gpt4free)

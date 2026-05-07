@@ -1,15 +1,15 @@
 [project]
 name = "main"
 version = "0.1.0"
-description = "make a image board with Django"
+description = "make a bbs with Django"
 authors = [{ name = "Hong", email = "yunghunghuang984@gmail.com" }]
-requires-python = "~=3.10"
+requires-python = "==3.13.13"
 readme = "README.md"
 license = "MIT"
 dependencies = [
-    "mysqlclient==2.2.0",
     "django-environ==0.10.0",
-    "django==4.1",
+    "django==5.2.14",
+    "psycopg[binary]>=3.3.4",
 ]
 
 [build-system]

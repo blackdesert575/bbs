@@ -1,0 +1,16 @@
+services:
+  bbs-db:
+    image: postgres:18
+    hostname: bbs-db
+    container_name: bbs-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: bbs
+      POSTGRES_PASSWORD: d26N7MKLzlhk
+      POSTGRES_DB: bbs-db
+    volumes:
+      - pg_data:/var/lib/postgresql/18/docker
+
+volumes:
+  pg_data:

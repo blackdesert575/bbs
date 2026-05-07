@@ -82,14 +82,25 @@ WSGI_APPLICATION = 'main.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "image_board",
+#         "USER": "worker",
+#         "PASSWORD": "d26N7MKLzlhk",
+#         "HOST": "127.0.0.1",
+#         "PORT": "33306",
+#     }
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "image_board",
-        "USER": "worker",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "bbs-db",
+        "USER": "bbs",
         "PASSWORD": "d26N7MKLzlhk",
         "HOST": "127.0.0.1",
-        "PORT": "33306",
+        "PORT": "5432",
     }
 }
 
