@@ -1,11 +1,11 @@
-# MySQL
+# MySQL (deprecated)
 
 ## Setup with podman/docker compose
 
 * replcae podman with docker if your're running with docker related tools
 
 ```shell
-podman commpose up -d
+podman compose up -d
 ```
 
 ## Running on macOS

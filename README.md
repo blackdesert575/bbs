@@ -1,5 +1,6 @@
 # bbs
 
+* make a 4chan-like or pttweb-like board with Django
 * bbs: Bulletin Board System
 
 ## To-do-list
@@ -31,6 +32,11 @@
 * docker/podman (just pickup one to do conatiner image building and running)
 
 ## Quick Start
+
+* setup PostgreSQL with Podman/Docker compose in postgresql/
+
+
+* Setup bbs with uv
 
 ```shell
 # database migrate
